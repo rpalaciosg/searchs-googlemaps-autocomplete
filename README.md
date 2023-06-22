@@ -18,3 +18,13 @@
 ```console
   yarn build
 ```
+
+## Eslint
+
+```console
+yarn run lint
+```
+```console
+yarn run lint:fix
+```
+

@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 export function Header() {
 	return (
-		<Box pb="28" as="section">
+		<Box pb="18" as="section">
 			<Box pt="70px" pb="80px" px="8" textAlign={["left", "left", "center"]}>
 				<Heading fontWeight="bold" fontSize={["2xl", "2xl", "3xl"]} pb="1em">
 					Where ara you located?
@@ -12,7 +12,7 @@ export function Header() {
 				</Text>
 				<Text
 					fontWeight="400"
-					fontsize={["xs", "xs", "sm"]}
+					fontSize={["sm", "sm", "md"]}
 					color="gray.400"
 					pt="3"
 					maxW="15em"

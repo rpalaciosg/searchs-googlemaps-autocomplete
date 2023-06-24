@@ -11,6 +11,7 @@ export function Search() {
 				_placeholder={{ color: "black", bg: "white" }}
 				fontSize="md"
 				boxShadow="base"
+				bg="white"
 			>
 				<InputLeftElement pointerEvents="none">
 					<img

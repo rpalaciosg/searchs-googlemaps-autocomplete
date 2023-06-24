@@ -1,8 +1,31 @@
 import { Input, InputGroup, InputLeftElement, Stack } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 
+import zipcodesJSON from "./../../assets/data/zipcodes.json";
 import mappinIcon from "./../../assets/icons/map-pin.png";
 
+interface Zipcode {
+	code: string;
+}
+interface Zipcodes {
+	zipcodes: Zipcode[];
+}
+
 export function Search() {
+	// zipcodes = zipcodesJSON.zipcodes;
+	// const [zipcodesState: Zipcodes, setZipcodesState] = useState<Zipcodes>({zipcodes: []});
+	const [zipcodesState, setZipcodesState] = useState<Zipcodes>({ zipcodes: [] });
+
+	useEffect(() => {
+		setZipcodesState({ zipcodes: zipcodesJSON.zipcodes });
+	}, []);
+
+	function checkZipcode(zip: string): boolean {
+		return zipcodesState.zipcodes.some((z: Zipcode) => z.code === zip);
+	}
+
+	checkZipcode("12345");
+
 	return (
 		<Stack maxW="600px" margin="auto">
 			<InputGroup

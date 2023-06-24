@@ -1,5 +1,6 @@
 import "./assets/styles/App.css";
 
+import { AutocompleteResults } from "./sections/AutocompleteResults/AutocompleteResults";
 import { Header } from "./sections/Header/Header";
 import { Search } from "./sections/Search/Search";
 
@@ -8,6 +9,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<Search />
+			<AutocompleteResults />
 		</div>
 	);
 }

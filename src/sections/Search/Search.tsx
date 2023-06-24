@@ -11,6 +11,7 @@ export function Search() {
 				_placeholder={{ color: "black", bg: "white" }}
 				fontSize="md"
 				boxShadow="base"
+				bg="white"
 			>
 				<InputLeftElement pointerEvents="none">
 					<img
@@ -25,8 +26,10 @@ export function Search() {
 					_placeholder={{ color: "black", bg: "white" }}
 					size="lg"
 					borderRadius="0"
-					paddingX="4"
-					paddingY="4"
+					// paddingX="4"
+					px={4}
+					// paddingY="4"
+					py={4}
 				/>
 			</InputGroup>
 		</Stack>
